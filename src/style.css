@@ -1,0 +1,210 @@
+.page1-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #F5F7FB;
+  position: relative; 
+  overflow: hidden;
+}
+.page1-container::before,
+.page1-container::after {
+  content: "";
+  z-index: -1; 
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute
+}
+.page1-container::before {
+  background-image: url('./pics/yellow.png'); 
+  width: 500px;
+  height: 500px;
+  top: -150px; 
+  z-index: 4;
+  right: -50px;
+}
+.page1-container::after {
+  background-image: url('./pics/blue.png'); 
+  width: 400px; 
+  height: 400px;
+  z-index: 5;
+  bottom: -100px;
+  left: -100px;
+}
+@media (max-width: 768px) { 
+  .page1-container::before {
+    width: 400px; 
+    height: 400px;
+    top: -150px; 
+    z-index: 4;
+    right: -50px;
+  }
+}
+@media (max-width: 768px) { 
+  .page1-container::after {
+    width: 300px; 
+    height: 300px;
+    z-index: 5;
+    bottom: -100px;
+    left: -100px;
+  }
+}
+.page1-main-div {
+  text-align: center;
+  background-color: #F5F7FB;
+}
+.page1-header {
+  color: #334155;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+.page1-description {
+  color: #64748b; 
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+}
+.page1-button {
+  background-color: #4f46e5; 
+  color: white;
+  font-size: 1rem;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+.page1-button:hover {
+  background-color: #4338ca;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+.page-container {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #F5F7FB;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+  position: relative; 
+  overflow: hidden;
+}
+.page-container::before,
+.page-container::after {
+  content: "";
+  z-index: -1; 
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+}
+.page-container::before {
+  background-image: url('./pics/yellow.png'); 
+  width: 500px;
+  height: 500px;
+  top: -150px; 
+  z-index: 4;
+  right: -50px;
+}
+.page-container::after {
+  background-image: url('./pics/blue.png'); 
+  width: 400px; 
+  height: 400px;
+  z-index: 5;
+  bottom: -200px;
+  left: -50px;
+}
+@media (max-width: 1200px) { 
+  .page-container::before {
+    width: 400px; 
+    height: 400px;
+    top: -150px; 
+    z-index: 4;
+    right: -50px;
+  }
+}
+@media (max-width: 1200px) { 
+  .page-container::after {
+    width: 300px; 
+    height: 300px;
+    z-index: 5;
+    bottom: -179px;
+    left: -100px;
+  }
+}
+.main-div {
+  background-color: #F5F7FB;
+  padding: 15px 15px;
+  width: 100%;
+  max-width: 600px;
+  border-bottom: 1px solid #D6DBF5;
+}
+.quiz-questions {
+  font-size: 22px;
+  font-weight: bold;
+  color: #293264;
+}
+.quiz-button {
+  background-color: #F5F7FB;
+  color: #293264;
+  border: 2px solid #293264;
+  border-radius: 17px;
+  padding: 7px 21px;
+  margin: 5px;
+  cursor: pointer;
+  font-size: 15px;
+  border-width: 1px;
+}
+.quiz-button:active {
+  background-color: #D6DBF5;
+  border: none;
+}
+.quiz-button[selected] {
+  background-color: #D6DBF5;
+  color: #293264;
+  border: none;
+}
+.quiz-submit {
+  background-color: #4D5B9E;
+  color: white;
+  font-size: 16px;
+  border-radius: 15px;
+  padding: 14px 34px;
+  margin: 20px auto;
+  display: block;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+  align-self: center; 
+
+}
+.quiz-submit:hover {
+  background-color: #4D5B9E;
+  color: white;
+}
+.submit-div{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+h2 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #293264;
+  margin-top: 20px;
+  text-align: center;
+  margin-right: 50px;
+}
+.button-play-again {
+  background-color: #4D5B9E;
+  color: white;
+  font-size: 16px;
+  border-radius: 15px;
+  padding: 14px 34px;
+  margin: 20px auto;
+  display: block;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+}
+.button-play-again:hover {
+  background-color: #3A4693;
+}
